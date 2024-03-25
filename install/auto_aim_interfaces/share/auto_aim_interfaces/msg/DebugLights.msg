@@ -1,0 +1,1 @@
+/home/imca06/ros_ws/src/rm_auto_aim/auto_aim_interfaces/msg/DebugLights.msg
