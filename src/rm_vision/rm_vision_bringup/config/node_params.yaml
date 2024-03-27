@@ -1,12 +1,12 @@
 /camera_node:
   ros__parameters:
     camera_info_url: package://rm_vision_bringup/config/camera_info.yaml
-    exposure_time: 3800
-    gain: 8.0
+    exposure_time: 2800
+    gain: 5.0
 
 /serial_driver:
   ros__parameters:
-    timestamp_offset: 0.05
+    timestamp_offset: 0.005
     device_name: /dev/ttyUSB0
     baud_rate: 115200
     flow_control: none
@@ -18,7 +18,7 @@
     debug: true
 
     detect_color: 0
-    binary_thres: 80
+    binary_thres: 60
 
     light.min_ratio: 0.1
     armor.min_light_ratio: 0.8
@@ -36,12 +36,12 @@
       sigma2_q_yaw: 5.0
       sigma2_q_r: 80.0
 
-      r_xyz_factor: 4e-4
-      r_yaw: 5e-3
+      r_xyz_factor: 5e-3
+      r_yaw: 5e-2
 
     tracker:
       max_match_distance: 0.5
       max_match_yaw_diff: 1.0
 
       tracking_thres: 5
-      lost_time_thres: 1.0
+      lost_time_thres: 0.8
